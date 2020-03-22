@@ -265,6 +265,8 @@ age_70 = 8
 age_80 = 14.8
 
 app = dash.Dash(__name__, external_stylesheets=['assets/codepen.css'])
+server = app.server
+
 app.layout = html.Div(style={'backgroundColor': '#ffffff', 'textAlign': 'center', }, children=[
     html.Br(),
     html.Div([
