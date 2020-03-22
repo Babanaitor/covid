@@ -20,6 +20,7 @@ Flask==1.1.1
 Flask-Compress==1.4.0
 Flask-SeaSurf==0.2.2
 future==0.18.2
+gunicorn==19.9.0
 heroku==0.1.4
 idna==2.8
 image==1.5.28
