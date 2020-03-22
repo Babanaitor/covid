@@ -343,7 +343,7 @@ def update_output(age, gender, diseases, country):
         if 20 > age > 9 and gender == 'Male':
             return 'Your chances of getting infected are "{}" % '.format(df.loc[(df['Country'] == country).idxmax(),
                                                                                     'Total cases'] / population[country]
-                                                                         * age_10) + \
+                                                                         ) + \
                    'Your chances of dying if infected is "{}" %'.format(round(age_10 * diseases_calc, 6))
 
 
