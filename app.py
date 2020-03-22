@@ -34,7 +34,7 @@ population = {'China': 1439323776
     , 'Iran': 83992949
     , 'Germany': 83783942
     , 'Thailand': 69799978
-    , 'United Kingdom': 67886011
+    , 'The United Kingdom': 67886011
     , 'France': 65273511
     , 'Italy': 60461826
     , 'Tanzania': 59734218
