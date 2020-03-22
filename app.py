@@ -345,7 +345,32 @@ def update_output(age, gender, diseases, country):
                                                                                     'Total cases'] / population[country]
                                                                          ) + \
                    'Your chances of dying if infected is "{}" %'.format(round(age_20 * diseases_calc, 6))
-        if 29 > age > 19 and gender == 'Male':
+        if 30 > age > 19 and gender == 'Male':
+            return 'Your chances of getting infected are "{}" % '.format(df.loc[(df['Country'] == country).idxmax(),
+                                                                                    'Total cases'] / population[country]
+                                                                         ) + \
+                   'Your chances of dying if infected is "{}" %'.format(round(age_30 * diseases_calc, 6))
+        if 40 > age > 29 and gender == 'Male':
+            return 'Your chances of getting infected are "{}" % '.format(df.loc[(df['Country'] == country).idxmax(),
+                                                                                    'Total cases'] / population[country]
+                                                                         ) + \
+                   'Your chances of dying if infected is "{}" %'.format(round(age_30 * diseases_calc, 6))
+        if 50 > age > 39 and gender == 'Male':
+            return 'Your chances of getting infected are "{}" % '.format(df.loc[(df['Country'] == country).idxmax(),
+                                                                                    'Total cases'] / population[country]
+                                                                         ) + \
+                   'Your chances of dying if infected is "{}" %'.format(round(age_30 * diseases_calc, 6))
+        if 60 > age > 49 and gender == 'Male':
+            return 'Your chances of getting infected are "{}" % '.format(df.loc[(df['Country'] == country).idxmax(),
+                                                                                    'Total cases'] / population[country]
+                                                                         ) + \
+                   'Your chances of dying if infected is "{}" %'.format(round(age_30 * diseases_calc, 6))
+        if 70 > age > 59 and gender == 'Male':
+            return 'Your chances of getting infected are "{}" % '.format(df.loc[(df['Country'] == country).idxmax(),
+                                                                                    'Total cases'] / population[country]
+                                                                         ) + \
+                   'Your chances of dying if infected is "{}" %'.format(round(age_30 * diseases_calc, 6))
+        if 150 > age > 69 and gender == 'Male':
             return 'Your chances of getting infected are "{}" % '.format(df.loc[(df['Country'] == country).idxmax(),
                                                                                     'Total cases'] / population[country]
                                                                          ) + \
